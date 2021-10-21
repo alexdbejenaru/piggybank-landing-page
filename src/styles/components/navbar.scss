@@ -1,0 +1,26 @@
+@use '../utils' as *;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+        height: rem(50px);
+        img {
+            height: rem(50px);
+        }
+    }
+
+    &_links {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &_cta {
+        transform: translateX(rem(-20px));
+    }
+}
