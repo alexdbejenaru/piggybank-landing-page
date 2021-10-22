@@ -2,4 +2,4 @@
 
 Alex Bejenaru
 
-Live Preview: piggybank-dev.netlify.app
+Live Preview: https://piggybank-dev.netlify.app
