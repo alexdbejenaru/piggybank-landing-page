@@ -1,26 +1,44 @@
 @use '../utils' as *;
 
-.navbar {
+.navbar_container {
+    position: fixed;
+    width: 100vw;
+    height: rem(50px);
+    margin: 0 auto;
+    background: transparent;
+    padding: rem(30px) 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    z-index: 5;
 
-    &_logo {
-        height: rem(50px);
-        img {
-            height: rem(50px);
-        }
-    }
-
-    &_links {
-        width: 30%;
+    .navbar {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-    }
+        justify-content: space-between;
+        align-items: center;
+        width: rem(1366px);
 
-    &_cta {
-        transform: translateX(rem(-20px));
+        &_logo {
+            height: rem(50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: rem(30px);
+            }
+        }
+
+        &_links {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
+}
+
+.navbar-shadow {
+    background-color: white;
+    box-shadow: 0 rem(1) rem(10) 0 rgba(0,0,0,0.2);
 }

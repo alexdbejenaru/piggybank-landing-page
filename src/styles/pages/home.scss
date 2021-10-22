@@ -1,2 +1,29 @@
 @use '../utils/' as *;
 
+.hero_container {
+    padding-top: rem(60px);
+    height: rem(768);
+    display: flex;
+    flex-direction: row;
+    max-width: rem(1366px);
+    margin: 0 auto;
+    overflow: visible;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+    }
+    
+    .image {
+        width: 50%;
+        height: fit-content;
+
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;         
+        }
+    };
+}
