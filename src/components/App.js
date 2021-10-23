@@ -5,12 +5,10 @@ import HeroSection from "./HeroSection";
 
 const App = () => {
   return (
-    <>
-      <main className="page-body">
+    <main>
           <Navbar />
           <HeroSection />
-      </main>
-    </>
+    </main>
   );
 };
 

@@ -1,29 +1,94 @@
 @use '../utils/' as *;
 
+.wrapper { 
+    position: relative;
+    background-color: rgb(243, 214, 225);
+
+    .custom-shape-divider-bottom-1634965345 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        opacity: .3;
+        // transform: rotate(180deg);
+    
+        svg {
+            position: relative;
+            display: block;
+            width: calc(123% + 1.3px);
+            height: 107px;
+        }
+    
+        .shape-fill {
+            fill: #9B9B9B;
+        }
+    }
+}
+
 .hero_container {
-    padding-top: rem(60px);
-    height: rem(768);
+    position: relative;
+    padding-top: rem(60);
     display: flex;
     flex-direction: row;
+    height: rem(750);
     max-width: rem(1366px);
     margin: 0 auto;
-    overflow: visible;
 
     .text {
         display: flex;
         flex-direction: column;
         width: 50%;
         justify-content: center;
+
+        &_title {
+            color: #565AA6;
+            margin-bottom: rem(20);
+            font-family: var(--font-title);
+        }
+        
+        &_secondary {
+            color: #373969;
+            margin-bottom: rem(20);
+            font-family: var(--font-general);
+        }
     }
     
     .image {
         width: 50%;
-        height: fit-content;
+        // height: fit-content;
+        overflow: hidden;         
 
         img {
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;         
+            background-attachment: fixed;
+            height: rem(700);
         }
     };
+}
+
+.custom-shape-divider-bottom-1634967735 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1634967735 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1634967735 .shape-fill {
+    fill: #FFFFFF;
+}
+
+main {
+    height: 2000px;
 }
