@@ -1,0 +1,47 @@
+@use '../utils' as *;
+.section-container {
+    margin-top: rem(50px);
+    // background-color: lightblue;
+    max-width: rem(1366px);
+    margin: 0 auto;
+
+    .why-section {
+        &_title {
+            color: var(--color-text-title);
+            font-family: var(--font-title);
+            font-size: var(--font-h2);
+            margin-bottom: rem(10px);
+            margin-top: rem(50px)
+        }
+
+        &_text {
+            color:var(--color-text-general);
+            font-family: var(--font-general);
+        }
+    }
+
+    .cards-section {
+        .cards-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .card-container {
+                // border: black 1px solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 auto;
+                min-width: rem(200px);
+                max-width: rem(400px);
+                min-height: rem(300px);
+                padding: 0 rem(30px);
+            }
+
+            &_text {
+                text-align: center;
+            }
+        }
+    }
+}

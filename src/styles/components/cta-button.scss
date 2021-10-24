@@ -2,10 +2,17 @@
 
 .cta {
     button {
-        padding: rem(15px) rem(20px);
+        padding: rem(12px) rem(20px);
         border: none;
         border-radius: rem(30px);
         background: linear-gradient(45deg, rgba(80,101,168,1) 0%, rgba(252,70,107,1) 100%);
         color: rgba(241, 229, 205, 1);
+        font-family: var(--font-general);
+        font-weight: var(--font-bold);
+
+        &:hover {
+            opacity: .9;
+            transform: scale(1.02);
+        }
     }
 }

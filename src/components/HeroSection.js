@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <section className="text">
                     <h1 className="text_title">Next generation digital banking</h1>
                     <p className="text_secondary">
-                        Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more
+                        Take your financial life online. Your Piggy Bank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more!
                     </p>
                     <div className="button_cta cta">
                         <button>

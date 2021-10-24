@@ -2,6 +2,7 @@ import logo from '../images/piggy-bank-logo.png';
 import { useState } from 'react';
 
 const Navbar = () => {
+
     const [scrolled, setScrolled] = useState(false);
 
     const changeBackground = () => {

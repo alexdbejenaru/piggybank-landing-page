@@ -1,8 +1,17 @@
 @use '../utils/' as *;
 
+@keyframes animateWave {
+    0% {
+      transform: scale(1,0);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+  }
+
 .wrapper { 
     position: relative;
-    background-color: rgb(243, 214, 225);
+    background-color: var(--color-bg-color);
 
     .custom-shape-divider-bottom-1634965345 {
         position: absolute;
@@ -12,7 +21,6 @@
         overflow: hidden;
         line-height: 0;
         opacity: .3;
-        // transform: rotate(180deg);
     
         svg {
             position: relative;
@@ -43,21 +51,22 @@
         justify-content: center;
 
         &_title {
-            color: #565AA6;
+            color: var(--color-text-title);
             margin-bottom: rem(20);
             font-family: var(--font-title);
+            font-size: var(--font-h1);
         }
         
         &_secondary {
-            color: #373969;
+            color: var(--color-text-general);
             margin-bottom: rem(20);
             font-family: var(--font-general);
+            font-size: var(--font-sub-titles);
         }
     }
     
     .image {
         width: 50%;
-        // height: fit-content;
         overflow: hidden;         
 
         img {
@@ -76,17 +85,19 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
 
-.custom-shape-divider-bottom-1634967735 svg {
-    position: relative;
-    display: block;
-    width: calc(118% + 1.3px);
-    height: 92px;
-}
+    svg {
+        position: relative;
+        display: block;
+        width: calc(118% + 1.3px);
+        height: 92px;
+        transform-origin: bottom;
+        animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
 
-.custom-shape-divider-bottom-1634967735 .shape-fill {
-    fill: #FFFFFF;
+    .shape-fill {
+        fill: #FFFFFF;
+    }
 }
 
 main {
