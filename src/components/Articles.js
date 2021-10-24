@@ -11,7 +11,7 @@ const Articles = () => {
                                 <div className="articles-list_figure">
                                     <img className="articles-list_figure__image" src={article.image} alt={article.title} />
                                 </div>
-                                <p className="article-list_author">{article.author}</p>
+                                <p className="articles-list_author">{article.author}</p>
                                 <h3 className="articles-list_title">{article.title}</h3>
                                 <p className="articles-list_text">{article.text}</p>
                                 <div className="articles_cta cta">

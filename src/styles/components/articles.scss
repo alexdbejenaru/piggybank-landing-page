@@ -102,15 +102,10 @@
                 }
             }
 
-            &_author {
-                color: lightgray;
-                font-size: smaller;
-            }
-
             &_figure {
                 height: rem(200px);
                 width: inherit;
-
+                
                 &__image {
                     width: 100%;
                     height: 100%;
@@ -119,8 +114,19 @@
                 }
             }
 
+            &_author {
+                color: var(--color-text-author);
+                font-size: var(--font-small);
+                margin: rem(5px) 0;
+            }
+
+            &_title {
+                margin-bottom: rem(10px);
+            }
+
             &_text {
-                color: var(--color-text-general)
+                color: var(--color-text-general);
+                font-size: var(--font-description)
             }
         }
     }
