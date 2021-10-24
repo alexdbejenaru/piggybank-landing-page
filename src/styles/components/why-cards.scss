@@ -1,9 +1,7 @@
 @use '../utils' as *;
 .section-container {
-    margin-top: rem(50px);
-    // background-color: lightblue;
     max-width: rem(1366px);
-    margin: 0 auto;
+    margin: rem(100px) auto;
 
     .why-section {
         &_title {

@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import WhyPiggyBank from "./WhyPiggyBank";
 import ArticlesSection from "./ArticlesSection";
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           <HeroSection />
           <WhyPiggyBank />
           <ArticlesSection />
+          <Footer />
     </main>
   );
 };
