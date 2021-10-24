@@ -9,10 +9,15 @@
         color: rgba(241, 229, 205, 1);
         font-family: var(--font-general);
         font-weight: var(--font-bold);
+        text-align: center;
 
         &:hover {
             opacity: .9;
-            transform: scale(1.02);
+            transform: scaleX(1.02);
+            transition-duration: .2s;
+            transition-timing-function: ease-in;
+            color: white;
+            cursor: pointer;
         }
     }
 }

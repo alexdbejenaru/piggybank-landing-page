@@ -1,5 +1,4 @@
 import cards from '../data/cards';
-import Api from '../images/icon-api.svg';
 
 const WhyCards = () => {
     return ( 
