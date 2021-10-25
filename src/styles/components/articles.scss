@@ -73,6 +73,14 @@
             justify-content: space-around;
             margin-bottom: rem(100px);
 
+            @include breakpoint-down(large) {
+                flex-wrap: wrap;
+            }
+
+            @include breakpoint-down(medium) {
+                display: block;
+            }
+
             .article-container {
                 display: flex;
                 align-items: flex-start;
@@ -83,7 +91,11 @@
                 min-width: rem(300px);
                 width: rem(500px);
                 padding: 0 rem(30px);
-                
+
+                @include breakpoint-down(large) {
+                    padding-bottom: rem(20px);
+                }
+
                 &_box {
                     background-color: white;
                     border-radius: rem(20px);

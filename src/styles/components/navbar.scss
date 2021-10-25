@@ -18,6 +18,10 @@
         align-items: center;
         width: rem(1366px);
 
+        @include breakpoint-down(large) {
+            max-width: rem(1023px);
+        }
+
         &_logo {
             height: rem(50px);
             display: flex;
@@ -36,6 +40,10 @@
             flex-direction: row;
             justify-content: space-evenly;
             color: #565AA6;
+
+            @include breakpoint-down(large) {
+                justify-content: space-between;
+            }
         }
     }
 }
