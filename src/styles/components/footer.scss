@@ -5,10 +5,15 @@
     height: 200px;
     width: 100vw;
     color: white;
+    display: flex;
+    align-items: center;
 
     &-box {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        min-width: rem(1366px);
+        margin: 0 auto;
 
         .left-block {
             .footer_logo {
@@ -16,6 +21,12 @@
                     height: rem(50px);
                 }
             }
+        }
+
+        .center-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     }
 }
