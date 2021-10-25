@@ -4,7 +4,7 @@
     background-color: var(--color-bg-dark);
     height: 200px;
     width: 100vw;
-    color: white;
+    color: var(--color-text-link);
     display: flex;
     align-items: center;
 
@@ -51,6 +51,14 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
+            min-width: 30%;
+
+            .footer-nav_link {
+                &:hover {
+                    color: hsl(0, 0%, 100%);
+                    cursor: pointer;
+                }
+            }
         }
 
         .right-block {
