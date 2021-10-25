@@ -13,7 +13,7 @@ let articles = [
     },
     {
         author: 'By Wilson Hutton',
-        title: 'Take your Easybank card wherever you go',
+        title: 'Take your Piggy Bank card wherever you go',
         image: require('../images/image-plane.jpg'),
         text: 'We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …',
     },

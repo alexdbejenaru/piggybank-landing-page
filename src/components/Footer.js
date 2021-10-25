@@ -13,11 +13,11 @@ const Footer = () => {
                         </div>
 
                         <div className="social-links">
-                            <FontAwesomeIcon icon={ faFacebook } />
-                            <FontAwesomeIcon icon={ faYoutube } />
-                            <FontAwesomeIcon icon={ faInstagram } />
-                            <FontAwesomeIcon icon={ faPinterest } />
-                            <FontAwesomeIcon icon={ faTwitter } />
+                            <FontAwesomeIcon className="social-links_badge" icon={ faFacebook } />
+                            <FontAwesomeIcon className="social-links_badge" icon={ faYoutube } />
+                            <FontAwesomeIcon className="social-links_badge" icon={ faInstagram } />
+                            <FontAwesomeIcon className="social-links_badge" icon={ faPinterest } />
+                            <FontAwesomeIcon className="social-links_badge" icon={ faTwitter } />
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                         </div>
 
                         <div className="right-list">
-                        <ul className="footer-nav">
+                            <ul className="footer-nav">
                                 <li className="footer-nav_link">Careers</li>
                                 <li className="footer-nav_link">Support</li>
                                 <li className="footer-nav_link">Privacy Policy</li>
