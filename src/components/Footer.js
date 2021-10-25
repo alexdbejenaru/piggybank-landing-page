@@ -6,7 +6,7 @@ const Footer = () => {
     return ( 
         <>
             <section className="footer-container">
-                <div className="foonter-container-box">
+                <div className="footer-container-box">
                     <div className="left-block">
                         <div className="footer_logo">
                             <img src={logo} alt="Piggy Bank" />

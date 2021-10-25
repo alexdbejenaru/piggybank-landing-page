@@ -1,5 +1,21 @@
+@use '../utils' as *;
+
 .footer-container {
     background-color: var(--color-bg-dark);
     height: 200px;
     width: 100vw;
+    color: white;
+
+    &-box {
+        display: flex;
+        flex-direction: row;
+
+        .left-block {
+            .footer_logo {
+                img {
+                    height: rem(50px);
+                }
+            }
+        }
+    }
 }
