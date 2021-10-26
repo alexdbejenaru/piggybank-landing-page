@@ -26,6 +26,10 @@
             min-width: rem(1023px);
         }
 
+        @include breakpoint-down(medium) {
+            min-width: rem(639px);
+        }
+
         @include breakpoint-down(small) {
             max-width: rem(639px);
             min-width: rem(200px);
@@ -102,6 +106,12 @@
 
             @include breakpoint-down(small) {
                 display: none;
+            }
+
+            .copyright {
+                @include breakpoint-down(medium) {
+                    display: none;
+                }
             }
         }
     }
