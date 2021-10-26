@@ -16,7 +16,7 @@ const HeroSection = () => {
                     <p className="text_secondary">
                         Take your financial life online. Your Piggy Bank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more!
                     </p>
-                    <div className="button_cta cta">
+                    <div className="hero_cta cta">
                         <button>
                             Request Invite
                         </button>

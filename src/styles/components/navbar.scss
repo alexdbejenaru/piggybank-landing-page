@@ -28,27 +28,114 @@
             justify-content: center;
             align-items: center;
 
+            @include breakpoint-down(medium) {
+                margin-left: 3%;
+            }
+
             img {
                 height: rem(30px);
                 cursor: pointer;
             }
         }
-
-        &_links {
-            width: 30%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            color: #565AA6;
-
-            @include breakpoint-down(large) {
-                justify-content: space-between;
-            }
-        }
     }
+}
+
+.navbar_links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--color-text-title);
+    margin: 0 auto;
+
+    @include breakpoint-down(large) {
+        justify-content: space-between;
+    }
+
+
 }
 
 .navbar-shadow {
     background-color: white;
     box-shadow: 0 rem(1) rem(10) 0 rgba(0,0,0,0.2);
+}
+
+.navbar_cta {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.web-navigation {
+    width: 40%;
+
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.mobile-navigation {
+    display: none;
+
+    @include breakpoint-down(medium) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hamburger-icon {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        font-size: rem(30px);
+        color: var(--color-text-title);
+        z-index: 10;
+    }
+
+    .close-icon {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        font-size: rem(30px);
+        color: var(--color-text-title);
+        z-index: 10;
+    }
+
+}
+
+.navbar_links {
+
+    li {
+        &:first-child {
+            @include breakpoint-down(medium) {
+                padding-top: 35px;
+            }
+        }
+
+        @include breakpoint-down(medium) {
+        padding-bottom: rem(70px);
+        font-size: var(--font-h2);
+        font-weight: var(--font-semi-bold);
+        
+        }
+    }
+
+    @include breakpoint-down(medium) {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-text-title);
+        color: var(--color-text-link);
+        opacity: .95;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
 }

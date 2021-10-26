@@ -1,5 +1,7 @@
-import logo from '../images/piggy-bank-logo.png';
+import logo from '../../images/piggy-bank-logo.png';
 import { useState } from 'react';
+import MobileNavigation from './MobileNavigation';
+import Navigation from './Navigation';
 
 const Navbar = () => {
 
@@ -22,14 +24,9 @@ const Navbar = () => {
                     <img src={logo} alt="Piggy Bank" />
                 </div>
 
-                <ul className="navbar_links">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                </ul>
-
+                    <Navigation />
+                    <MobileNavigation />
+                    
                 <div className="navbar_cta cta">
                     <button>
                         Request Invite
