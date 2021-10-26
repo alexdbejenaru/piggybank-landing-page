@@ -48,6 +48,10 @@
         max-width: rem(1023px);
     }
 
+    @include breakpoint-down(medium) {
+        max-width: rem(639px);
+    }
+
     @include breakpoint-down(small) {
         height: 100vh;
     }
@@ -58,7 +62,7 @@
         width: 50%;
         justify-content: center;
 
-        @include breakpoint-down(small) {
+        @include breakpoint-down(medium) {
             width: 100%;
             padding: 0 3%;
             justify-content: center;
@@ -70,6 +74,11 @@
             margin-bottom: rem(20);
             font-family: var(--font-title);
             font-size: var(--font-h1);
+
+            @include breakpoint-down(medium) {
+                min-width: rem(50px);
+                text-align: center;
+            }
 
             @include breakpoint-down(small) {
                 font-size: 40px;
@@ -85,6 +94,13 @@
             font-family: var(--font-general);
             font-size: var(--font-sub-titles);
 
+            @include breakpoint-down(medium) {
+                min-width: rem(50px);
+                text-align: center;
+                padding: 0 rem(3px);
+                margin-bottom: rem(10px);
+            }
+
             @include breakpoint-down(small) {
                 font-size: rem(14px);
                 min-width: rem(50px);
@@ -99,7 +115,7 @@
         width: 50%;
         overflow: hidden; 
         
-        @include breakpoint-down(small) {
+        @include breakpoint-down(medium) {
             display: none;
         }
 
