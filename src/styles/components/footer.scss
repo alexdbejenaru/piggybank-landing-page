@@ -2,7 +2,7 @@
 
 .footer-container {
     background-color: var(--color-bg-dark);
-    height: 200px;
+    height: rem(200px);
     width: 100vw;
     color: var(--color-text-link);
     display: flex;
@@ -10,6 +10,7 @@
 
     @include breakpoint-down(small) {
         display: block;
+        height: rem(100px);
     }
 
     &-box {

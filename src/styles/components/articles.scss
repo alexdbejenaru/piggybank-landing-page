@@ -56,17 +56,34 @@
     margin: 0 auto;
     padding: rem(50) 0;
 
+    @include breakpoint-down(large) {
+        max-width: rem(1023px);
+    }
+
+    @include breakpoint-down(medium) {
+        max-width: rem(639px);
+    }
+
     .article-section {
         &_title {
             color: var(--color-text-title);
             font-family: var(--font-title);
             font-size: var(--font-h2);
             margin-bottom: rem(30px);
-            margin-top: rem(100px);
+            margin-top: rem(80px);
+
+            @include breakpoint-down(medium) {
+                margin-top: rem(50px);
+            }
+            
+            @include breakpoint-down(small) {
+                text-align: center;
+            }
         }
     }
 
     .articles-section {
+        
         .articles-list {
             display: flex;
             flex-direction: row;
@@ -75,10 +92,20 @@
 
             @include breakpoint-down(large) {
                 flex-wrap: wrap;
+                flex-basis: 25%;
+                justify-content: space-between;
             }
 
             @include breakpoint-down(medium) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-width: rem(639px);
+                margin: 0 auto;
+            }
+
+            @include breakpoint-down(small) {
                 display: block;
+                margin: 0 auto;
             }
 
             .article-container {
@@ -86,14 +113,21 @@
                 align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
-                margin: 0 auto;
+                margin: rem(20px) auto;
                 min-height: rem(300px);
                 min-width: rem(300px);
-                width: rem(500px);
+                max-width: rem(500px);
                 padding: 0 rem(30px);
 
                 @include breakpoint-down(large) {
                     padding-bottom: rem(20px);
+                    min-width: rem(150px);
+                    max-width: rem(230px);
+                    padding: 0;
+                }
+
+                @include breakpoint-down(medium) {
+                    max-width: rem(300px);
                 }
 
                 &_box {
@@ -138,7 +172,7 @@
 
             &_text {
                 color: var(--color-text-general);
-                font-size: var(--font-description)
+                font-size: var(--font-description);
             }
         }
     }
