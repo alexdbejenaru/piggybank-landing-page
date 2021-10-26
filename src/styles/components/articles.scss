@@ -64,6 +64,10 @@
         max-width: rem(639px);
     }
 
+    @include breakpoint-down(small) {
+        margin-top: rem(-40px);
+    }
+
     .article-section {
         &_title {
             color: var(--color-text-title);
@@ -101,6 +105,7 @@
                 grid-template-columns: 1fr 1fr;
                 max-width: rem(639px);
                 margin: 0 auto;
+                margin-bottom: rem(50px);
             }
 
             @include breakpoint-down(small) {

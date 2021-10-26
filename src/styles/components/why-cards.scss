@@ -15,6 +15,12 @@
             font-size: var(--font-h2);
             margin-bottom: rem(10px);
             margin-top: rem(50px);
+            padding-left: 3%;
+
+            @include breakpoint-down(medium) {
+                margin-top: -30px;
+                text-align: center;
+            }
 
             @include breakpoint-down(small) {
                 margin-top: rem(40px);
@@ -25,6 +31,12 @@
         &_text {
             color:var(--color-text-general);
             font-family: var(--font-general);
+            padding-left: 3%;
+
+            @include breakpoint-down(medium) {
+                padding: 0 3% rem(40px) 3%;
+                text-align: center;
+            }
         }
     }
 
@@ -33,6 +45,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+
+            @include breakpoint-down(medium) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            @include breakpoint-down(small) {
+                display: block;
+            }
 
             .card-container {
                 // border: black 1px solid;
