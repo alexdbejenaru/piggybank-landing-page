@@ -62,6 +62,7 @@
 
     @include breakpoint-down(medium) {
         max-width: rem(639px);
+        margin-top: rem(-40px);
     }
 
     @include breakpoint-down(small) {
