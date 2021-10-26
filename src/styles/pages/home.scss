@@ -128,7 +128,9 @@
     };
 
     .hero_cta {
-        margin: 0 auto;
+        @include breakpoint-down(medium) {
+            margin: 0 auto;
+        }
     }
 }
 
