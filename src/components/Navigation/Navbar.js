@@ -2,6 +2,7 @@ import logo from '../../images/piggy-bank-logo.png';
 import { useState } from 'react';
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className={scrolled ? 'navbar_container navbar-shadow' : 'navbar_container'}>
             <nav className="navbar">
                 <div className="navbar_logo">
-                    <img src={logo} alt="Piggy Bank" />
+                    <Link to="/"><img src={logo} alt="Piggy Bank" /></Link>
                 </div>
 
                     <Navigation />

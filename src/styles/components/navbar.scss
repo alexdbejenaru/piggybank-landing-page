@@ -106,6 +106,10 @@
 .navbar_links {
 
     li {
+        &:hover {
+            cursor: pointer;
+        }
+
         &:first-child {
             @include breakpoint-down(medium) {
                 padding-top: 35px;

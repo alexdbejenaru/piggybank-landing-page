@@ -1,0 +1,23 @@
+@use '../utils' as *;
+
+.contact-content {
+    height: calc(100vh - 200px);
+    padding-top: rem(50px);
+    max-width: rem(1366px);
+
+    @include breakpoint-down(large) {
+        max-width: rem(1023px);
+    }
+
+    @include breakpoint-down(medium) {
+        max-width: rem(639px);
+    }
+}
+
+.contact-hero {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

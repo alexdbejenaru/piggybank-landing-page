@@ -41,6 +41,10 @@
             flex-direction: column;
             justify-content: space-around;
 
+            @include breakpoint-down(medium) {
+                justify-content: center;
+                margin: 0 auto;
+            }
             @include breakpoint-down(small) {
                 justify-content: center;
             }
@@ -48,6 +52,10 @@
             .footer_logo {
                 img {
                     height: rem(50px);
+                }
+
+                @include breakpoint-down(medium) {
+                    margin-bottom: rem(20px);
                 }
 
                 @include breakpoint-down(small) {
