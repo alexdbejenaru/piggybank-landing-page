@@ -1,10 +1,35 @@
 @use '../utils' as *;
 
+.contact-wrapper { 
+    position: relative;
+    background-color: var(--color-bg-color);
+    width: 100vw;
+
+    .custom-shape-divider-bottom-1634965345 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        opacity: .3;
+    
+        svg {
+            position: relative;
+            display: block;
+            width: calc(123% + 1.3px);
+            height: rem(107px);
+        }
+    
+        .shape-fill {
+            fill: #9B9B9B;
+        }
+    }
+}
+
 .contact-content {
     height: calc(100vh - 200px);
-    padding-top: rem(50px);
-    max-width: rem(1366px);
-
+    
     @include breakpoint-down(large) {
         max-width: rem(1023px);
     }
@@ -12,12 +37,20 @@
     @include breakpoint-down(medium) {
         max-width: rem(639px);
     }
+
+    @include breakpoint-down(small) {
+        max-width: rem(639px);
+        height: calc(100vh - 100px);
+    }
 }
 
 .contact-hero {
+    max-width: rem(1366px);
+    margin: 0 auto;
     height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: rem(50px);
 }
