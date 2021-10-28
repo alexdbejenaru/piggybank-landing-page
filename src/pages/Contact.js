@@ -5,8 +5,8 @@ const Contact = () => {
     return ( 
         <>
             <div className="contact-content">
-                <ContactHeroSection />
                 <ContactFormSection />
+                <ContactHeroSection />
             </div>
         </>
      );

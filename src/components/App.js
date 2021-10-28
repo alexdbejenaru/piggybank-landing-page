@@ -1,7 +1,7 @@
 import "../styles/index.scss";
 import Navbar from "./Navigation/Navbar";
 import Homepage from '../pages/Homepage';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "../pages/Contact";
 import Footer from '../components/Footer';
 

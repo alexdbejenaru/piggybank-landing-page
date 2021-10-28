@@ -1,6 +1,7 @@
 import logo from '../images/piggy-bank-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faPinterest, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
@@ -24,17 +25,15 @@ const Footer = () => {
                     <div className="center-block">
                         <div className="left-list">
                             <ul className="footer-nav">
-                                <li className="footer-nav_link">About Us</li>
-                                <li className="footer-nav_link">Contact</li>
-                                <li className="footer-nav_link">Blog</li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About</Link></li>
                             </ul>
                         </div>
 
                         <div className="right-list">
                             <ul className="footer-nav">
-                                <li className="footer-nav_link">Careers</li>
-                                <li className="footer-nav_link">Support</li>
-                                <li className="footer-nav_link">Privacy Policy</li>
+                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/careers">Careers</Link></li>
                             </ul>
                         </div>
                     </div>

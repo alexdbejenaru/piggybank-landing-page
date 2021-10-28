@@ -29,6 +29,10 @@
 
 .contact-content {
     height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include breakpoint-down(large) {
         max-width: rem(1023px);
@@ -43,7 +47,14 @@
         height: calc(100vh - 100px);
     }
 }
-
+.contact-form {
+    max-width: rem(1366px);
+    margin: 0 auto;
+    height: 70%;
+    width: 100%;
+    margin-top: rem(100px);
+    background-color: blueviolet;
+}
 .contact-hero {
     max-width: rem(1366px);
     margin: 0 auto;
@@ -52,5 +63,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: rem(50px);
+    background-color: brown;
+    width: 100%;
 }
