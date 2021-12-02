@@ -3,7 +3,8 @@ import Navbar from "./Navigation/Navbar";
 import Homepage from '../pages/Homepage';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "../pages/Contact";
-import Footer from '../components/Footer';
+import About from "../pages/About";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,10 @@ const App = () => {
               
               <Route path="/contact">
                 <Contact />
+              </Route>
+
+              <Route path="/about">
+                <About />
               </Route>
             </Switch>
           </div>
