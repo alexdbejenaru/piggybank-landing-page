@@ -24,10 +24,8 @@ const Navbar = () => {
                 <div className="navbar_logo">
                     <Link to="/"><img src={logo} alt="Piggy Bank" /></Link>
                 </div>
-
                     <Navigation />
                     <MobileNavigation />
-                    
                 <div className="navbar_cta cta">
                     <button>
                         Request Invite

@@ -28,6 +28,7 @@
 
         @include breakpoint-down(medium) {
             min-width: rem(639px);
+            flex-direction: column;
         }
 
         @include breakpoint-down(small) {
@@ -41,21 +42,15 @@
             flex-direction: column;
             justify-content: space-around;
 
-            @include breakpoint-down(medium) {
-                justify-content: center;
-                margin: 0 auto;
-            }
-            @include breakpoint-down(small) {
-                justify-content: center;
-            }
-
             .footer_logo {
                 img {
                     height: rem(50px);
                 }
 
                 @include breakpoint-down(medium) {
-                    margin-bottom: rem(20px);
+                    // margin-bottom: rem(20px);
+                    display: flex;
+                    justify-content: center;
                 }
 
                 @include breakpoint-down(small) {
@@ -63,30 +58,9 @@
                 }
             }
 
-            .social-links {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                height: rem(30px);
-
-                a {
-                    color:hsl(0, 0%, 100%)
-                }
-
-                &_badge {
-                    height: rem(30px);
-                    width: rem(30px);
-
-                    @include breakpoint-down(small) {
-                        margin: rem(20px);
-                        transform: scale(1.4);
-                    }
-
-                    &:hover {
-                        cursor: pointer;
-                        color: #D95585;
-                        transform: scale(0.9)
-                    }
+            .footer_address {
+                @include breakpoint-down(medium) {
+                    display: none;
                 }
             }
         }
@@ -96,7 +70,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-            min-width: 30%;
+            min-width: 50%;
 
             .footer-nav_link {
                 &:hover {
@@ -106,7 +80,45 @@
             }
 
             @include breakpoint-down(medium) {
-                display: none;
+                margin: 0 auto;
+            }
+            @include breakpoint-down(small) {
+                justify-content: center;
+            }
+            
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: rem(30px);
+                width: 60%;
+                flex-wrap: wrap;
+                
+                a {
+                    color:hsl(0, 0%, 100%)
+                }
+
+                @include breakpoint-down(medium) {
+                    width: 100%;
+                }
+                
+                &_badge {
+                    height: rem(30px);
+                    width: rem(30px);
+                    
+
+                    @include breakpoint-down(small) {
+                        margin: rem(10px);
+                        transform: scale(1);
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #D95585;
+                        transform: scale(0.9)
+                    }
+                }
             }
         }
 
@@ -121,6 +133,7 @@
             }
 
             .copyright {
+                text-align: right;
                 @include breakpoint-down(medium) {
                     display: none;
                 }
