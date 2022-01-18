@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer/Footer";
 import Careers from "./pages/Careers";
 import { useState } from "react";
+import Modal from "./components/Modal";
 
 const App = () => {
 
@@ -34,13 +35,8 @@ const App = () => {
               <Route exact element={ <Careers /> } path="/careers" />
             </Routes>
           </div>
-          <div className={show === false ? 'hidden' : 'modal_container'}>
-            <div className="modal">
-              <div className="modal_title">Hei</div>
-              <div className="modal_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, doloribus.</div>
-              <button onClick={() => showModal()} className="cta">Close</button>
-            </div>
-          </div>
+          
+          <Modal show={ show } showModal={ showModal }/>
 
           <Footer showModal={ showModal } />
         </main>
