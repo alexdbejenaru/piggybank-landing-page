@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage';
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer/Footer";
+import Careers from "./pages/Careers";
 
 const App = () => {
   return (
@@ -14,11 +15,10 @@ const App = () => {
           
           <div className="content">
             <Routes>
-              <Route path="/" element={ <Homepage /> } exact />
-                              
-              <Route exact element={ <Contact /> } path="/contact" />
-
+              <Route exact element={ <Homepage /> } path="/" />
               <Route exact element={ <About /> } path="/about" />
+              <Route exact element={ <Contact /> } path="/contact" />
+              <Route exact element={ <Careers /> } path="/careers" />
             </Routes>
           </div>
 
