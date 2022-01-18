@@ -4,7 +4,7 @@ import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ showModal }) => {
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -15,7 +15,6 @@ const Navbar = () => {
             setScrolled(false);
         }
     }
-    
     window.addEventListener('scroll', changeBackground);
 
     return ( 
@@ -26,7 +25,7 @@ const Navbar = () => {
                 </div>
                     <Navigation />
                     <MobileNavigation />
-                <div className="navbar_cta cta">
+                <div onClick={showModal} className="navbar_cta cta">
                     <button>
                         Request Invite
                     </button>
