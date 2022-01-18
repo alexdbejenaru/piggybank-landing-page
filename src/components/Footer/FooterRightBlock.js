@@ -1,9 +1,10 @@
-const FooterRightBlock = () => {
+const FooterRightBlock = ({ showModal }) => {
     const intFrameWidth = window.innerWidth;
+
     return ( 
         <div className="right-block">
             <div className="footer_cta cta">
-                <button>
+                <button onClick={ showModal }>
                     Request Invite
                 </button>
             </div>

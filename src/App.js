@@ -28,7 +28,7 @@ const App = () => {
           
           <div className="content">
             <Routes>
-              <Route path="/" element={ <Homepage /> } exact />
+              <Route path="/" element={ <Homepage showModal={ showModal }/> } exact />
               <Route exact element={ <About /> } path="/about" />
               <Route exact element={ <Contact /> } path="/contact" />
               <Route exact element={ <Careers /> } path="/careers" />
@@ -42,7 +42,7 @@ const App = () => {
             </div>
           </div>
 
-          <Footer />
+          <Footer showModal={ showModal } />
         </main>
       </Router>
   );

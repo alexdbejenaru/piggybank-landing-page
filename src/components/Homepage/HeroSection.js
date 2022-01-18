@@ -1,6 +1,6 @@
 import HeroImage from '../../images/piggy-hero.png'
 
-const HeroSection = () => {
+const HeroSection = ({ showModal }) => {
     return ( 
         <div className="wrapper">    
             <div className="custom-shape-divider-bottom-1634965345">
@@ -17,7 +17,7 @@ const HeroSection = () => {
                         Take your financial life online. Your Piggy Bank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more!
                     </p>
                     <div className="hero_cta cta">
-                        <button>
+                        <button onClick={ showModal }>
                             Request Invite
                         </button>
                     </div>

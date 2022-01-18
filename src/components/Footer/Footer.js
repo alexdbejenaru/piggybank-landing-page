@@ -2,7 +2,7 @@ import FooterCenterBlock from './FooterCenterBlock';
 import FooterLeftBlock from './FooterLeftBlock';
 import FooterRightBlock from './FooterRightBlock';
 
-const Footer = () => {
+const Footer = ({ showModal }) => {
     return ( 
         <>
             <section className="footer-container">
@@ -11,7 +11,7 @@ const Footer = () => {
 
                     <FooterCenterBlock />
 
-                    <FooterRightBlock />
+                    <FooterRightBlock showModal={ showModal }/>
                 </div>
             </section>
         </>

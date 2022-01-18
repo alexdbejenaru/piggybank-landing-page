@@ -2,10 +2,10 @@ import HeroSection from "../components/Homepage/HeroSection";
 import WhyPiggyBank from "../components/Homepage/WhyPiggyBank";
 import ArticlesSection from "../components/Homepage/ArticlesSection";
 
-const Homepage = () => {
+const Homepage = ({ showModal }) => {
     return ( 
         <>
-        <HeroSection />
+        <HeroSection showModal={ showModal }/>
         <WhyPiggyBank />
         <ArticlesSection />
         </>
