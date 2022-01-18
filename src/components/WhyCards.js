@@ -9,10 +9,10 @@ const WhyCards = () => {
                         <li key={ index }>
                             <div className="card-container">
                                 <figure className="cards-list_figure">
-                                    <img className="cards-list_figure__image" src={card.image} alt={card.title} />
+                                    <img className="cards-list_figure__image" src={ card.image } alt={ card.title } />
                                 </figure>
-                                <h3 className="cards-list_title">{card.title}</h3>
-                                <p className="cards-list_text">{card.text}</p>
+                                <h3 className="cards-list_title">{ card.title }</h3>
+                                <p className="cards-list_text">{ card.text }</p>
                             </div>
                         </li> 
                     ))}

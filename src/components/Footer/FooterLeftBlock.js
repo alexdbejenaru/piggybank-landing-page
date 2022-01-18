@@ -1,12 +1,15 @@
 import logo from '../../images/piggy-bank-logo.png';
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faPinterest, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faFacebook, faInstagram, faPinterest, faTwitter, faYoutube)
 
 const FooterLeftBlock = () => {
     return ( 
         <div className="left-block">
             <div className="footer_logo">
-                <img src={logo} alt="Piggy Bank" />
+                <img src={ logo } alt="Piggy Bank" />
             </div>
 
             <div className="social-links">
