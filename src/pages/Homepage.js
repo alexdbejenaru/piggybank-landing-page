@@ -1,6 +1,6 @@
-import HeroSection from "../components/HeroSection";
-import WhyPiggyBank from "../components/WhyPiggyBank";
-import ArticlesSection from "../components/ArticlesSection";
+import HeroSection from "../components/Homepage/HeroSection";
+import WhyPiggyBank from "../components/Homepage/WhyPiggyBank";
+import ArticlesSection from "../components/Homepage/ArticlesSection";
 
 const Homepage = () => {
     return ( 

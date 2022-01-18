@@ -1,4 +1,4 @@
-import HeroImage from '../images/piggy-hero.png'
+import HeroImage from '../../images/piggy-hero.png'
 
 const HeroSection = () => {
     return ( 
