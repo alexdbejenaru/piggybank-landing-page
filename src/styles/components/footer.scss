@@ -93,12 +93,11 @@
                 align-items: center;
                 height: rem(30px);
                 width: 60%;
-                flex-wrap: wrap;
                 
                 a {
                     color:hsl(0, 0%, 100%)
                 }
-
+                
                 @include breakpoint-down(medium) {
                     width: 100%;
                 }
@@ -109,7 +108,7 @@
                     
 
                     @include breakpoint-down(small) {
-                        margin: rem(10px);
+                        margin: rem(7px);
                         transform: scale(1);
                     }
 
