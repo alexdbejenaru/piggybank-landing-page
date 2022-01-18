@@ -7,7 +7,7 @@ const FooterLeftBlock = () => {
                 <img src={ logo } alt="Piggy Bank" />
             </div>
             <div className="footer_address">
-                <p className="footer_address__text">399 74th Street, San Colorado</p>
+                <p className="footer_address__text">399 74th Street, San Colorado, OX</p>
             </div>
             
         </div>
