@@ -17,37 +17,37 @@ const Modal = ({ show, showModal }) => {
                 </div>
 
                 {/* Form */}
-                <form className="modal_form">
+                <div className="modal_form">
                     <form className="form-label form-css-label">
                         <fieldset>
-                        <input id="firstName" name="firstName" type="text" autocomplete="off" required />
-                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" autoComplete="off" required />
+                        <label htmlFor="firstName">First Name</label>
                         </fieldset>
                         <fieldset>
-                        <input id="lastName" name="lastName" type="text" autocomplete="off" required />
-                        <label for="lastName">Last Name</label>
+                        <input id="lastName" name="lastName" type="text" autoComplete="off" required />
+                        <label htmlFor="lastName">Last Name</label>
                         </fieldset>
                         <fieldset>
-                        <input id="email" name="email" type="text" autocomplete="off" required />
-                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="text" autoComplete="off" required />
+                        <label htmlFor="email">Email Address</label>
                         </fieldset>
                     </form>
 
                     <form className="form-label form-css-label">
                         <fieldset>
-                        <input id="username" name="username" type="text" autocomplete="off" required />
-                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text" autoComplete="off" required />
+                        <label htmlFor="username">Username</label>
                         </fieldset>
                         <fieldset>
-                        <input id="password" name="password" type="password" autocomplete="off" required />
-                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autoComplete="off" required />
+                        <label htmlFor="password">Password</label>
                         </fieldset>
                         <fieldset>
-                        <input id="cpassword" name="cpassword" type="password" autocomplete="off" required />
-                        <label for="cpassword">Confirm Password</label>
+                        <input id="cpassword" name="cpassword" type="password" autoComplete="off" required />
+                        <label htmlFor="cpassword">Confirm Password</label>
                         </fieldset>
                     </form>
-                </form>
+                </div>
 
                 {/* Button */}
                 <div className="cta request_btn">

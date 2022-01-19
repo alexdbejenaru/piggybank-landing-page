@@ -14,7 +14,6 @@ const App = () => {
   const [ show, setShow ] = useState(false);
 
   const showModal = () => {
-    console.log('hei');
     if (show === false) {
       setShow(true);
     } else {
