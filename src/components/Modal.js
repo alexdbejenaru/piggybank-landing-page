@@ -3,7 +3,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { useState } from "react";
 
 const Modal = ({ show, showModal }) => {
-    const [ hover, setHover ] = useState(false);
+    const [ hover, setHover ] = useState(true);
 
     return ( 
         <div className={show === false ? 'hidden' : 'modal_container'}>
