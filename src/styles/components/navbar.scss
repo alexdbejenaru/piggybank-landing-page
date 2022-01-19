@@ -45,9 +45,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color: var(--color-text-title);
     margin: 0 auto;
+    
+    .links {
+        color: var(--color-text-title);
 
+        &:active, &:visited {
+            color: var(--color-text-general);
+        }
+    }
+    
     @include breakpoint-down(large) {
         justify-content: space-between;
     }
