@@ -11,7 +11,7 @@ import Modal from "./components/Modal";
 
 const App = () => {
 
-  const [ show, setShow ] = useState(false);
+  const [ show, setShow ] = useState(true);
 
   const showModal = () => {
     console.log('hei');

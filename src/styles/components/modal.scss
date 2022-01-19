@@ -20,5 +20,123 @@
         margin: 0 auto;
         width: 40%;
         height: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        border-radius: rem(15px);
+
+        // Close Button
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            .icon {
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        // Title
+        .modal_title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: rem(50px);
+        }
+
+        // Form
+        &_form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .form-label {
+                width: 50%;
+                margin-bottom: 10px;
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 3em;
+                    padding: 16px 8px;
+                    border: 0;
+                    border-radius: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1;
+                    background: rgba(255,255,255,0.97);
+                    color: #212121;
+                    outline: 0;
+                    appearance: none;
+                    transition: all 0.2s ease-in-out;
+                }
+                
+                fieldset {
+                position: relative;
+                    
+                &:first-child input {
+                    border-radius: 4px 4px 0 0;
+                }
+            
+                &:last-child input {
+                    border-radius: 0 0 4px 4px;
+                    box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+                }
+            
+                & + fieldset { border-top: 1px solid #ddd; }
+                }
+            
+                label {
+                    position: absolute;
+                    top: 15px;
+                    left: 8px;
+                    color: #909090;
+                    transform: translate3d(0, 0, 0);
+                    transition: all 0.2s ease-in-out;
+                    pointer-events: none;
+                }
+            }
+              
+            // Animation on <label>
+            .form-css-label {
+                input {
+                    &[data-empty="false"],
+                    &:valid,
+                    &:focus {
+                        padding: 22px 8px 10px;
+                    }
+                    &:focus {
+                        outline: 0;
+                        background: rgba(255,255,255,1);
+                    }
+                    &[data-empty="false"] + label,
+                    &:valid + label,
+                    &:focus + label {
+                        color: #5856D6;
+                        font-weight: 700;
+                        font-size: 12px;
+                        transform: translate3d(0, -10px, 0);
+                    }
+                }
+            }
+        }
+
+        // Request Button
+        .request_btn {
+            align-self: flex-end;
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: rem(40px);
+        }
     }
 }
+
+
+

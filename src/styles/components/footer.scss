@@ -130,7 +130,7 @@
             align-items: flex-end;
             justify-content: space-between;
 
-            @include breakpoint-down(small) {
+            @include breakpoint-down(medium) {
                 display: none;
             }
 
@@ -140,10 +140,6 @@
 
             .copyright {
                 text-align: right;
-
-                @include breakpoint-down(medium) {
-                    display: none;
-                }
             }
         }
     }
